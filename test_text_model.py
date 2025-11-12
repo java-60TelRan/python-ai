@@ -23,5 +23,6 @@ class TestTextModel(TestCase):
        expected = [
         
         ]
-       self.assertEqual(expected, self.textModel.getAnswers("What desturbs me achieve the purpose? ",2))       
+       self.assertEqual(expected, self.textModel.getAnswers("What desturbs me achieve the purpose? ",2))
+          
         
