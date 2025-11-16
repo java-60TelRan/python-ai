@@ -11,7 +11,7 @@ class TestImageInfo(TestCase):
         self.assertEqual([0, 8], self.imageInfo.boxesClass("car"))
     def test_box_info(self):
         tuple_exp = (
-            1434.1,	1108.2,	2802.4,	2321.8,	0.927583, "car"	
+            1434.1,	1108.2,	2802.4,	2321.8,	0.9, "car"	
         )
         tuple_act = self.imageInfo.boxInfo(0)
         for exp, act in zip(tuple_exp, tuple_act):

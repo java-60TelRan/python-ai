@@ -58,7 +58,7 @@ class ImageInfo :
         {bi: (pi,d) for bi, (pi, d) in self.__belongingPerson.items()
          if d <= threshold} 
         noBelongPerson:dict[int, None] = \
-            {bi: None for bi, (pi, d) in self.__belongingPerson.items() 
+            {bi: None for bi, (_, d) in self.__belongingPerson.items() 
              if d > threshold}
         return belongPerson | noBelongPerson    
             
