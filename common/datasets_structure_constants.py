@@ -6,10 +6,11 @@ FULL_IMAGES_TRAIN = BASE_ROOT + "/" + IMAGES_TRAIN
 LABELS_TRAIN = BASE_LABELS + "/train"
 FULL_IMAGES_VAL = BASE_ROOT + "/" + IMAGES_VAL
 LABELS_VAL = BASE_LABELS + "/val"
+DATA_YAML = "data.yaml"
 
 NAMES = {0: 'circle', 1: 'square'}
 
 
 __all__ = ["BASE_ROOT", "IMAGES_TRAIN", "IMAGES_VAL", "BASE_LABELS",
            "FULL_IMAGES_TRAIN", "LABELS_TRAIN", "FULL_IMAGES_VAL",
-           "LABELS_VAL"]
+           "LABELS_VAL", "DATA_YAML"]

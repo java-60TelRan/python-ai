@@ -3,7 +3,7 @@ import cv2
 import yaml
 import numpy as np
 import math
-from common import FULL_IMAGES_TRAIN, LABELS_TRAIN, FULL_IMAGES_VAL, BASE_ROOT, LABELS_VAL
+from common import FULL_IMAGES_TRAIN, LABELS_TRAIN, FULL_IMAGES_VAL, BASE_ROOT, LABELS_VAL, DATA_YAML
 import random
 CIRCLE = "circle"
 SQUARE = "square"
@@ -115,6 +115,6 @@ def saveCircleSquareData():
     saveData(N_SQUARES, FULL_IMAGES_TRAIN, LABELS_TRAIN, SQUARE)
     saveData(int(math.floor(N_SQUARES * 0.1)), FULL_IMAGES_VAL, LABELS_VAL, SQUARE)
 
-update_data_yaml(f"{BASE_ROOT}/data.yaml")
+update_data_yaml(f"{BASE_ROOT}/{DATA_YAML}")
 saveCircleSquareData()
 
